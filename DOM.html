@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Run Date and Time</title>
+    <link rel="stylesheet" href="W4_(DOM)style.css">
+</head>
+<body>
+    <h1>Click the button to display the current date and time</h1>
+    <button id="showDateTimeBtn">Show Current Date and Time</button>
+    <p id="datetime"></p>
+
+    <script>
+        let button = document.getElementById("showDateTimeBtn");
+        let dateTimeParagraph = document.getElementById("datetime");
+
+        button.addEventListener("click", function() {
+            let currentDateTime = new Date();
+            dateTimeParagraph.innerText = currentDateTime;
+        });
+    </script>
+</body>
+</html>
